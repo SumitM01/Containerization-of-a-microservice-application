@@ -121,9 +121,8 @@ Here we can see that the backend services RDS, Elasticache and RabbitMQ are also
 ![cache-validation](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/3a666edd-26f4-46d2-b5ee-a2393466004a)
 
 ## Conclusion
-To conclude, the project provides a cost efficient way to manage infrastructure by using containers to host applications. I have successfully conatinerized the existing application using docker and uploaded the images
-to dockerhub for your viewing.
-As documented in this markdown format file, I have invested a significant amount of time in researching, learning, debugging to implement this project. If you appreciate this document please star it and share it with your friends. 
+To conclude, the project provides a cost efficient way to manage infrastructure by using containers to host applications. I have successfully conatinerized the existing application using docker and uploaded the images to dockerhub for your viewing.
+As documented in this markdown format file, I have invested a significant amount of time in researching, learning, debugging to implement this project😫. If you appreciate this document please star ⭐ it and share it with your friends😁. 
 ## References
 - https://www.udemy.com/course/decodingdevops
 - https://github.com/devopshydclub/vprofile-project/tree/docker
