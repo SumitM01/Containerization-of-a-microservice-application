@@ -16,6 +16,7 @@ The project aims to address the **challenges** faced by operations or DevOps tea
 **On Dockerhub**
 - Go to *Repositories->Create repository*-> Give a name and create.
 - In this way create 3 public repositories to host app, db and web images.
+![Dockerhub-repos](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/f3b910b4-3945-499e-b5ad-19b38332943b)
 
 ### Configure EC2 instance and Docker engine
 - Launch an EC2 instance with the following specifications:
@@ -40,6 +41,7 @@ The project aims to address the **challenges** faced by operations or DevOps tea
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
     ```
     - This will install docker engine on your instance while it is being launched.
+  ![ec2-instance](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/cacfe775-57bb-4c59-99b3-186814f0c238)
 
 ### Fork vprofile-project repository into your account
 - **On Github**
@@ -72,10 +74,14 @@ docker compose build
 ```bash
 docker images
 ```
+![docker-images](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/a1406385-7359-49f3-8854-ac40cbbce7b0)
+
 - Run the following command to spin up all the containers from the images in the background:
 ```bash
 docker compose up -d
 ```
+![Docker-compose-up](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/cd0de36a-08d1-430a-800b-489eeebd606e)
+
 - Run the following command to login to Dockerhub
 ```bash
 docker login
@@ -99,15 +105,20 @@ docker system prune -y
 ## Results
 As artifact is deployed, I validated it by visiting the following pages:
 - **Login Page**
-![login-page](https://github.com/SumitM01/CI-CD-project-using-AWS-CodeCommit/assets/65524561/7efbbbe6-d450-4780-a54a-9ed6fec2e4be)
+![login-page](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/96b6ded1-209b-493e-9e5b-eae1386eff18)
+
 - **Home Page**
 ![home-page](https://github.com/SumitM01/CI-CD-project-using-AWS-CodeCommit/assets/65524561/b3dade74-61d4-4867-9938-46eedf123423)
 
 Here we can see that the backend services RDS, Elasticache and RabbitMQ are also configured correctly.
+- **User list page**
+![database-users-page](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/a7184c72-f762-4faf-a47b-0385b180d879)
+- **Database Validation**
+![db-validation](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/967d1f54-1d42-4f86-b6bf-d651d8b0dfa3)
 - **Rabbitmq status**
 ![rabbitmq-start-success](https://github.com/SumitM01/CI-CD-project-using-AWS-CodeCommit/assets/65524561/c600d583-18e2-4daf-845c-39febf678ab3)
-- **User Details Page**
-![user-details-page](https://github.com/SumitM01/CI-CD-project-using-AWS-CodeCommit/assets/65524561/0e7aa500-b972-4ff6-ba4a-f687c115f826)
+- **Memcache Validation**
+![cache-validation](https://github.com/SumitM01/Containerization-of-a-microservice-application/assets/65524561/3a666edd-26f4-46d2-b5ee-a2393466004a)
 
 ## Conclusion
 To conclude, the project provides a cost efficient way to manage infrastructure by using containers to host applications. I have successfully conatinerized the existing application using docker and uploaded the images
