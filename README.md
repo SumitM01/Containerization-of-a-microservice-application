@@ -97,7 +97,7 @@ docker system prune -y
 ```
 
 ## Results
-As artifact is deployed, I validated it by visiting the following pages:
+As the containers are deployed, I validated them by visiting the following pages:
 - **Login Page**
 ![login-page](https://github.com/SumitM01/CI-CD-project-using-AWS-CodeCommit/assets/65524561/7efbbbe6-d450-4780-a54a-9ed6fec2e4be)
 - **Home Page**
@@ -112,7 +112,7 @@ Here we can see that the backend services RDS, Elasticache and RabbitMQ are also
 ## Conclusion
 To conclude, the project provides a cost efficient way to manage infrastructure by using containers to host applications. I have successfully conatinerized the existing application using docker and uploaded the images
 to dockerhub for your viewing.
-As documented in this markdown format file, I have invested a significant amount of time in researching, learning, debugging to implement this project. If you appreciate this document please share with friends and do give it a try. 
+As documented in this markdown format file, I have invested a significant amount of time in researching, learning, debugging to implement this project. If you appreciate this document please give it a ⭐, share with friends and do give it a try. 
 ## References
 - https://www.udemy.com/course/decodingdevops
 - https://github.com/devopshydclub/vprofile-project/tree/docker
